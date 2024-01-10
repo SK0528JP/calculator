@@ -128,8 +128,8 @@
   <br>
   <button class="clear" onclick="clearDisplay()">C</button>
   <button id="pi" onclick="appendToDisplay('Math.PI')">π</button>
-  <button id="divide" class="operator" onclick="appendToDisplay('/')">/</button>
-  <button id="multiply" class="operator" onclick="appendToDisplay('*')">*</button>
+  <button id="divide" class="operator" onclick="appendToDisplay('/')">÷</button>
+  <button id="multiply" class="operator" onclick="appendToDisplay('*')">×</button>
   <br>
   <button id="number" onclick="appendToDisplay('7')">7</button>
   <button id="number" onclick="appendToDisplay('8')">8</button>
@@ -214,13 +214,6 @@
         }
     }
   });
-
-  // Cボタン実行時のアニメーション
-  document.getElementById('clear').addEventListener('click', function() {
-    clearDisplay();
-    display.style.animation = 'fadeOut 0.3s ease-out';
-    setTimeout(() => {
-      display.style.animation = '';
     }, 300);
   });
 </script>
